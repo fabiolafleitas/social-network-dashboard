@@ -1,0 +1,17 @@
+.notificationsList {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.notification {
+    margin-bottom: 10px;
+}
+
+.new {
+    width: 6px;
+    height: 6px;
+    background-color: orangered;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}

@@ -1,0 +1,19 @@
+.usersContainer {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.usersContainer li:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.usersList {
+    list-style: none;
+}
+
+.userInfoContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+}

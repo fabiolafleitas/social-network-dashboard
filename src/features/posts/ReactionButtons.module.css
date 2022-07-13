@@ -1,0 +1,10 @@
+.reactionBtn {
+    background-color: transparent;
+    border: none;
+    font-weight: 500;
+    border-radius: 4px;
+}
+.reactionBtn:hover {
+    background-color: var(--redux-color-light);
+    color: #ffffff
+}

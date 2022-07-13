@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header span {
+    color: lightgrey;
+}
+
+.link {
+    color: #ffffff;
+    background-color: var(--redux-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #ffffff;
+    background-color: var(--redux-color-focus);
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

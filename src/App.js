@@ -6,25 +6,62 @@ import {
   Redirect,
 } from 'react-router-dom'
 
-import { Navbar } from './app/Navbar'
+import Navbar from './app/Navbar'
+import UsersList from './features/users/UsersList'
+import AddPostForm from './features/posts/AddPostForm'
+import PostsList from './features/posts/PostsList'
+import SinglePostPage from './features/posts/SinglePostPage'
+import EditPostForm from './features/posts/EditPostForm'
+import UsersListPage from './features/users/UsersListPage'
+import UserPage from './features/users/UserPage'
+import NotificationsList from './features/notifications/NotificationsList'
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <div className="App">
-        <Switch>
-          <Route
-            exact
-            path="/"
-            render={() => (
-              <section>
-                <h2>Welcome to the Redux Essentials example app!</h2>
-              </section>
-            )}
-          />
-          <Redirect to="/" />
-        </Switch>
+      <div className="container">
+        <div className="App">
+          <Switch>
+            <Route
+              exact
+              path="/"
+              render={() => (
+                <>
+                  <UsersList />
+                  <AddPostForm />
+                  <PostsList />
+                </>
+              )}
+            />
+            <Route
+              exact
+              path="/posts/:postId"
+              component={SinglePostPage}
+            />
+            <Route
+              exact
+              path="/edit/:postId"
+              component={EditPostForm}
+            />
+            <Route
+              exact
+              path="/users"
+              component={UsersListPage}
+            />
+            <Route
+              exact
+              path="/users/:userId"
+              component={UserPage}
+            />
+            <Route
+              exact
+              path="/notifications"
+              component={NotificationsList}
+            />
+            <Redirect to="/" />
+          </Switch>
+        </div>
       </div>
     </Router>
   )

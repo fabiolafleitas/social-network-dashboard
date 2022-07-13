@@ -1,0 +1,36 @@
+.avatar {
+    border-radius: 50%;
+    outline: 2px solid transparent;
+    outline-offset: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.avatar.large {
+    margin: 0 10px;
+    background-color: var(--redux-color);
+}
+
+.avatar.large, .avatar.large img {
+    width: 80px;
+    height: 80px;
+    outline-color: var(--redux-color);
+}
+
+.avatar.small {
+    background-color: lightgrey;
+}
+
+.avatar.small, .avatar.small img {
+    width: 40px;
+    height: 40px;
+    outline-color: lightgrey;
+}
+
+.avatar.link:hover {
+    box-shadow: 0 0 20px rgba(108,52,185,0.65);
+    -webkit-box-shadow: 0 0 20px rgba(108,52,185,0.65);
+    -moz-box-shadow: 0 0 20px rgba(108,52,185,0.65);
+}

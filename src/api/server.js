@@ -63,6 +63,7 @@ export const db = factory({
     name: String,
     username: String,
     posts: manyOf('post'),
+    image: Number
   },
   post: {
     id: primaryKey(nanoid),
@@ -99,6 +100,7 @@ const createUserData = () => {
     lastName,
     name: `${firstName} ${lastName}`,
     username: faker.internet.userName(),
+    image: Math.floor(Math.random() * 5) + 1
   }
 }
 

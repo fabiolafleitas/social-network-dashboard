@@ -1,0 +1,19 @@
+.authorContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info {
+    margin-left: 10px;
+}
+
+.info > span[title='author'] {
+    font-weight: 500;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}

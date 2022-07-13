@@ -1,0 +1,44 @@
+.postContainer {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.columnsLayout {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 5%
+}
+
+.authorSection {
+    flex: 1 0 30%;
+    margin-right: 20px;
+}
+
+.postSection {
+    flex: 1 1 70%;
+}
+
+.authorSection, .postSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.reactionBtns {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.link {
+    color: #ffffff;
+    background-color: var(--redux-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.link:hover {
+    color: #ffffff;
+    background-color: var(--redux-color-focus);
+}

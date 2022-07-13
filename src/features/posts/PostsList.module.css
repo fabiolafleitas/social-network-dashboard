@@ -1,0 +1,7 @@
+.postsContainer {
+    width: 90%;
+}
+
+.postsContainer article:not(:last-child) {
+    margin-bottom: 40px;
+}
